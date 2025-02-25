@@ -12,36 +12,40 @@
 
 <body>
 
-    <header>
-        
+    <header class="bg-gray-300 text-center py-4">
+        <h1 class="text-3xl font-bold text-gray-800">Add Products</h1>
     </header>
 
     <div class="hero bg-base-200 min-h-screen">
         <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-            <form class="card-body">
+            <div class="card-body">
                 <div class="form-control">
                     <label class="label">
                         <span class="label-text">Product Name</span>
                     </label>
-                    <input type="text" placeholder="Product Name" class="input input-bordered" required />
+                    <input id="productName" type="text" placeholder="Product Name" class="input input-bordered" />
                 </div>
                 <div class="form-control">
                     <label class="label">
                         <span class="label-text">Product Image</span>
                     </label>
-                    <input type="text" placeholder="Product Image" class="input input-bordered" required />
+                    <input id="productImage" type="text" placeholder="Product Image" class="input input-bordered" />
                 </div>
                 <div class="form-control">
                     <label class="label">
                         <span class="label-text">Product Price</span>
                     </label>
-                    <input type="number" placeholder="Product Price" class="input input-bordered" required />
+                    <input id="productPrice" type="number" placeholder="Product Price" class="input input-bordered" />
                 </div>
                 <div class="form-control mt-6">
-                    <button class="btn btn-primary">Add Product</button>
+                    <button id="productAddBtn" class="btn btn-primary">Add Product</button>
                 </div>
-            </form>
+            </div>
         </div>
+    </div>
+
+    <div id="allProductList">
+        
     </div>
 
     <script src="./product.js"></script>
