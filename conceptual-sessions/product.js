@@ -10,7 +10,7 @@ document.getElementById('productAddBtn').addEventListener('click', function () {
     addProductContainer.classList.add('p-4');
     addProductContainer.classList.add('bg-red-100');
     addProductContainer.innerHTML = `
-        <h1 class="text-3xl font-bold">Product Name: ${productName}</h1>
+        <h1 class="text-3xl font-bold">${productName}</h1>
         <img src=${productImage} alt="Product Image" class="w-80 my-5">
         <p>Product Price: ${productPrice}</p>
     `
