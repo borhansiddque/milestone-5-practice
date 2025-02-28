@@ -31,3 +31,17 @@ function selectWristSize(giveSize) {
     }
     
 }
+
+
+const quantityElements = document.querySelectorAll('.quantity-button');
+for(let btn of quantityElements) {
+    btn.addEventListener('click', function (event) {
+        const amount = event.target.innerText === "+" ? 1 : -1;
+        const quantityElement = document.getElementById("quantity");
+        const currentQuantity = parseInt(quantityElement.innerText);
+        const newQuantity = Math.max(0, currentQuantity + amount);
+        quantityElement.innerText = newQuantity;
+        
+    });
+    
+}
