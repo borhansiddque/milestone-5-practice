@@ -19,6 +19,7 @@ for (let i = 0; i < ringButtons.length; i++) {
 
 }
 
+
 function selectWristSize(giveSize) {
     const sizes = ["S", "M", "L", "XL"];
     for(const size of sizes) {
@@ -45,3 +46,8 @@ for(let btn of quantityElements) {
     });
     
 }
+
+
+document.getElementById('add-to-cart').addEventListener('click', function () {
+    document.getElementById('checkout-container').classList.remove('hidden');
+})
