@@ -18,3 +18,16 @@ for (let i = 0; i < ringButtons.length; i++) {
     });
 
 }
+
+function selectWristSize(giveSize) {
+    const sizes = ["S", "M", "L", "XL"];
+    for(const size of sizes) {
+        const button = document.getElementById('size-'+ size);
+        if (size === giveSize) {
+            button.classList.add("border-purple-600");
+        } else {
+            button.classList.remove("border-purple-600");
+        }
+    }
+    
+}
